@@ -22,6 +22,7 @@
  * `hdm-workshop-01` bis `hdm-workshop-25`
  * Passwort wird im Workshop mitgeteilt
 * Login auf https://853161928370.signin.aws.amazon.com/console
+* Nach dem Login die Sprache der UI auf Englisch ändern (in der Fußleiste unten links), damit die hier verwendeten Begriffe zur UI passen
 
 ## Beispiel 1: SQS Listener
 
@@ -29,12 +30,15 @@
 * SQS-Konfiguration aufrufen: https://eu-central-1.console.aws.amazon.com/sqs/home?region=eu-central-1
 * Sicherstellen, dass oben rechts `Frankfurt` ausgewählt ist
 * `Create New Queue` anklicken und eigenen, eindeutigen Namen ausdenken (und merken 😉)
+* Unten rechts `Quick-Create Queue` anklicken
 
 ### Lambda konfigurieren
 * Zu Lambdas wechseln: https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions
 * `Create function` anklicken und `Use a blueprint` auswählen
 * In den Blueprints nach `sqs` suchen und den `sqs-poller` auswählen
-* Eigenen, eindeutigen Namen für die Funktion und für die anzulegende Rolle angeben
+* Eigenen, eindeutigen Namen für die Funktion angeben
+* Unter `Execution role` den Eintrag `Use an existing role` auswählen
+* Unter `Existing role` dann den Eintrag `HDMLambda` auswählen
 * Unter `SQS Trigger` die zuvor angelegte, eigene Queue auswählen und Haken bei `Enable trigger` setzen
 * `Create function` anklicken (dauert einen Moment)
 
@@ -55,7 +59,7 @@
 ## Beispiel 2: S3 Listener
 
 ### S3-Bucket anlegen
-* Zu S3 wechseln: https://s3.console.aws.amazon.com/s3/home?region=eu-central-1
+* In einem neuen Tab zu S3 wechseln: https://s3.console.aws.amazon.com/s3/home?region=eu-central-1
 * `Create bucket` anklicken, eindeutigen Namen ausdenken (und merken 😉) und unten rechts auf `Next` klicken
 * Im nächsten Schritt auch `Next` klicken, bis der Schritt `Set permissions` erreicht wurde
 * Dort den Haken bei `Block all public access` entfernen (Vorsicht: nur zu Demozwecken!), dann nochmal `Next` und anschließend `Create`
@@ -64,7 +68,9 @@
 * Zu Lambdas wechseln: https://eu-central-1.console.aws.amazon.com/lambda/home?region=eu-central-1#/functions
 * `Create function` anklicken und `Use a blueprint` auswählen
 * In den Blueprints nach `s3` suchen und `s3-get-object` auswählen
-* Eigenen, eindeutigen Namen für die Funktion und für die anzulegende Rolle angeben
+* Eigenen, eindeutigen Namen für die Funktion angeben
+* Unter `Execution role` den Eintrag `Use an existing role` auswählen
+* Unter `Existing role` dann den Eintrag `HDMLambda` auswählen
 * Unter `S3 Trigger` den zuvor angelegten, eigenen Buckets auswählen und Haken bei `Enable trigger` setzen
 * `Create function` anklicken (dauert einen Moment)
 
