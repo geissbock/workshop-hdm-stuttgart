@@ -14,6 +14,7 @@
 	- [Lambda konfigurieren](#lambda-konfigurieren)
 	- [Datei in S3 Bucket hochladen](#datei-in-s3-bucket-hochladen)
 	- [Log-Daten in CloudWatch ansehen](#log-daten-in-cloudwatch-ansehen)
+- [Zusatzaufgabe](#zusatzaufgabe)
 
 <!-- /TOC -->
 
@@ -82,3 +83,7 @@
 ### Log-Daten in CloudWatch ansehen
 * Immer mal wieder auf den Refresh-Button beim Monitoring der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
 * Dann den Link in der Spalte `Log Stream` in einem neuen Tab öffnen
+
+## Zusatzaufgabe
+* Der SQS Listener soll den Inhalt der Nachricht auslesen und in eine Text-Datei in den S3 Bucket schreiben.
+* Der S3 Listener soll wiederum den Inhalt der geschriebenen Dateien auslesen und loggen.
