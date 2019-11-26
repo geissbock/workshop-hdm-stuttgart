@@ -14,7 +14,7 @@
 ## Bei AWS einloggen
 * AWS-Benutzer sind bereits angelegt:
  * `hdm-workshop-01` bis `hdm-workshop-25`
- * Passwort jeweils `serverless-aws-2019-01` bis `serverless-aws-2019-25`
+ * Passwort wird im Workshop mitgeteilt
 * Login auf https://853161928370.signin.aws.amazon.com/console
 
 ## SQS konfigurieren
