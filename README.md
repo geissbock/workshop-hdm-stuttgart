@@ -14,7 +14,7 @@
 	- [Lambda konfigurieren](#lambda-konfigurieren)
 	- [Datei in S3 Bucket hochladen](#datei-in-s3-bucket-hochladen)
 	- [Log-Daten in CloudWatch ansehen](#log-daten-in-cloudwatch-ansehen)
-- [Zusatzaufgabe](#zusatzaufgabe)
+- [Zusatzaufgaben](#zusatzaufgabe)
 
 <!-- /TOC -->
 
