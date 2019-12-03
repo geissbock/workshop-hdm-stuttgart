@@ -84,6 +84,7 @@
 * Immer mal wieder auf den Refresh-Button beim Monitoring der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
 * Dann den Link in der Spalte `Log Stream` in einem neuen Tab öffnen
 
-## Zusatzaufgabe
+## Zusatzaufgaben
 * Der SQS Listener soll den Inhalt der Nachricht auslesen und in eine Text-Datei in den S3 Bucket schreiben.
 * Der S3 Listener soll wiederum den Inhalt der geschriebenen Dateien auslesen und loggen.
+* Eine weitere Lambda soll über das API Gateway per URL angesprochen werden und den Wert des Query-Parameters `msg` an die oben erstellte Queue schicken (z.B. `https://<url-zum-api-gateway>/endpoint?msg=test123`).
