@@ -54,7 +54,7 @@
 * Eigene Queue auswählen, unter `Queue Actions` den Eintrag `Send a message` anklicken, Nachricht eingeben und abschicken
 
 ### Log-Daten in CloudWatch ansehen
-* Immer mal wieder auf den Refresh-Button beim Monitoring der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
+* Immer mal wieder auf den Refresh-Button beim `Monitoring`-Tab der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
 * Dann den Link in der Spalte `Log Stream` in einem neuen Tab öffnen
 
 ## Beispiel 2: S3 Listener
@@ -81,7 +81,7 @@
 * Entweder per Drag & Drop oder über `Add files` eine Datei hochladen, z.B. ein JPG
 
 ### Log-Daten in CloudWatch ansehen
-* Immer mal wieder auf den Refresh-Button beim Monitoring der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
+* Immer mal wieder auf den Refresh-Button beim `Monitoring`-Tab der Lambda klicken und warten, bis ein weiterer Aufruf auftaucht
 * Dann den Link in der Spalte `Log Stream` in einem neuen Tab öffnen
 
 ## Zusatzaufgaben
