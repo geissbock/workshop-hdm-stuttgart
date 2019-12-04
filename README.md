@@ -85,12 +85,6 @@
 * Dann den Link in der Spalte `Log Stream` in einem neuen Tab öffnen
 
 ## Zusatzaufgaben
-1. Der SQS Listener soll den Inhalt der Nachricht auslesen und in eine Text-Datei in den S3 Bucket schreiben.
-2. Der S3 Listener soll wiederum den Inhalt der geschriebenen Dateien auslesen und loggen.
-3. Eine weitere Lambda soll über das API Gateway per URL angesprochen werden und den Wert des Query-Parameters `msg` an die oben erstellte Queue schicken (z.B. `https://<url-zum-api-gateway>/endpoint?msg=test123`).
-
-Musterlösungen in JavaScript für die Zusatzaufgaben findet ihr in
-
-1. [sqs-listener.js](sqs-listener.js)
-2. [s3-listener.js](s3-listener.js)
-3. [sqs-sender.js](sqs-sender.js)
+1. Der SQS Listener soll so erweitert werden, dass er den Inhalt der Nachricht ausliest und in eine Text-Datei in den S3 Bucket schreibt. ([Musterlösung](sqs-listener.js))
+2. Der S3 Listener soll wiederum so angepasst werden, dass er den Inhalt der geschriebenen Dateien ausliest und in die Logs schreibt. ([Musterlösung](s3-listener.js))
+3. Eine weitere, neue Lambda soll über das API Gateway per URL angesprochen werden und den Wert des Query-Parameters `msg` an die oben erstellte Queue schicken (z.B. `https://<url-zum-api-gateway>/default?msg=test123`). ([Musterlösung](sqs-sender.js))
